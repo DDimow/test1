@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Truck payload calculator</title>
+<style>
+:root{font-family:Inter,system-ui,sans-serif;color:#172c38;background:#f1f5f4}*{box-sizing:border-box}body{margin:0}main{max-width:960px;margin:64px auto;padding:0 24px}.brand{font-size:12px;font-weight:800;letter-spacing:2px;color:#347564}h1{font-size:clamp(30px,5vw,46px);letter-spacing:-1.5px;margin:16px 0}p{color:#61737d;line-height:1.6}.calculator{display:grid;grid-template-columns:1.1fr 1fr;background:white;border-radius:24px;overflow:hidden;box-shadow:0 16px 60px #203d3610;margin:32px 0}.inputs{padding:32px}label{display:block;font-size:14px;font-weight:650;margin-bottom:9px}.field{margin-bottom:24px}select,input{width:100%;padding:14px;border:1px solid #cbd6d7;border-radius:10px;font:inherit;color:inherit;background:#fff}select:focus,input:focus{outline:3px solid #bde6d8;outline-offset:2px}.weights{display:grid;grid-template-columns:1fr 1fr;gap:16px}.hint{font-size:12px;margin:8px 0 0}.result{background:#173f36;color:white;padding:36px;display:flex;flex-direction:column;justify-content:center}.result p{color:#bed8d0}.eyebrow{font-size:12px;letter-spacing:1.8px;text-transform:uppercase}.number{font-size:72px;font-weight:750;letter-spacing:-3px;line-height:1.2;margin-top:16px}.unit{font-size:18px;color:#bed8d0}.breakdown{border-top:1px solid #ffffff30;margin-top:30px;padding-top:16px}.row{display:flex;justify-content:space-between;gap:12px;margin:14px 0;font-size:14px}.row strong{white-space:nowrap}.note{font-size:13px;max-width:760px}#error{color:#ffcfb9;font-size:14px}button{border:0;background:#edf4f1;color:#245746;border-radius:8px;padding:10px 14px;font:inherit;font-size:13px;cursor:pointer}button:hover{background:#dcece4}@media(max-width:650px){main{margin:32px auto}.calculator{grid-template-columns:1fr}.inputs,.result{padding:24px}.number{font-size:60px}}
+</style>
+</head>
+<body>
+<main>
+<div class="brand">TRANSPORT TOOLS / PAYLOAD</div>
+<h1>How much can you load?</h1>
+<p>Calculate the available cargo weight for your truck and semitrailer.</p>
+<div class="calculator">
+<section class="inputs" aria-label="Vehicle configuration">
+<div class="field"><label for="trailer">Semitrailer type</label><select id="trailer"><option value="dry">Dry semitrailer</option><option value="temperature">Temperature-controlled semitrailer</option></select></div>
+<div class="field"><label for="mode">Transport modality</label><select id="mode"><option value="road">Road · 40 tonnes</option><option value="rail">Rail / intermodal · 44 tonnes</option></select></div>
+<div class="weights">
+<div class="field"><label for="truck">Truck tare (tonnes)</label><input id="truck" type="number" min="0" max="44" step="0.1" value="8" required></div>
+<div class="field"><label for="tare">Trailer tare (tonnes)</label><input id="tare" type="number" min="0" max="44" step="0.1" value="7" required></div>
+</div>
+<button id="reset" type="button">Reset tare to defaults</button>
+<p class="hint">Example tare defaults: truck 8 t; dry trailer 7 t; temperature-controlled trailer 9 t. Edit to match your vehicle.</p>
+</section>
+<section class="result" aria-label="Calculated payload" aria-live="polite" aria-atomic="true">
+<div class="eyebrow">Maximum payload</div>
+<div class="number" id="payload">25.0</div><div class="unit">tonnes of cargo</div>
+<p id="kg">25,000 kg available</p>
+<div class="breakdown"><div class="row"><span>Gross weight limit</span><strong id="limit">40.0 t</strong></div><div class="row"><span>Truck + trailer tare</span><strong id="total">15.0 t</strong></div><div class="row"><span>Calculation</span><strong id="formula">40 − 8 − 7</strong></div></div>
+<p id="error" hidden></p>
+</section>
+</div>
+<p class="note">Planning estimate using the requested limits: 40 t for road and 44 t for rail/intermodal. The 44 t allowance depends on applicable intermodal rules. Actual permitted payload also depends on vehicle ratings, axle loads and local regulations. Tare should include fuel, equipment and the driver.</p>
+</main>
+<script src="calculator.js"></script>
+</body>
+</html>
