@@ -5,12 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Truck payload calculator</title>
 <style>
-:root{font-family:Inter,system-ui,sans-serif;color:#172c38;background:#f1f5f4}*{box-sizing:border-box}body{margin:0}main{max-width:960px;margin:64px auto;padding:0 24px}.brand{font-size:12px;font-weight:800;letter-spacing:2px;color:#347564}h1{font-size:clamp(30px,5vw,46px);letter-spacing:-1.5px;margin:16px 0}p{color:#61737d;line-height:1.6}.calculator{display:grid;grid-template-columns:1.1fr 1fr;background:white;border-radius:24px;overflow:hidden;box-shadow:0 16px 60px #203d3610;margin:32px 0}.inputs{padding:32px}label{display:block;font-size:14px;font-weight:650;margin-bottom:9px}.field{margin-bottom:24px}select,input{width:100%;padding:14px;border:1px solid #cbd6d7;border-radius:10px;font:inherit;color:inherit;background:#fff}select:focus,input:focus{outline:3px solid #bde6d8;outline-offset:2px}.weights{display:grid;grid-template-columns:1fr 1fr;gap:16px}.hint{font-size:12px;margin:8px 0 0}.result{background:#173f36;color:white;padding:36px;display:flex;flex-direction:column;justify-content:center}.result p{color:#bed8d0}.eyebrow{font-size:12px;letter-spacing:1.8px;text-transform:uppercase}.number{font-size:72px;font-weight:750;letter-spacing:-3px;line-height:1.2;margin-top:16px}.unit{font-size:18px;color:#bed8d0}.breakdown{border-top:1px solid #ffffff30;margin-top:30px;padding-top:16px}.row{display:flex;justify-content:space-between;gap:12px;margin:14px 0;font-size:14px}.row strong{white-space:nowrap}.note{font-size:13px;max-width:760px}#error{color:#ffcfb9;font-size:14px}button{border:0;background:#edf4f1;color:#245746;border-radius:8px;padding:10px 14px;font:inherit;font-size:13px;cursor:pointer}button:hover{background:#dcece4}@media(max-width:650px){main{margin:32px auto}.calculator{grid-template-columns:1fr}.inputs,.result{padding:24px}.number{font-size:60px}}
+:root{font-family:Inter,system-ui,sans-serif;color:rgb(0,59,126);background:rgb(226,244,255)}*{box-sizing:border-box}body{margin:0}main{max-width:960px;margin:64px auto;padding:0 24px}.brand{font-size:12px;font-weight:800;letter-spacing:2px;color:rgb(0,59,126)}h1{font-size:clamp(30px,5vw,46px);letter-spacing:-1.5px;margin:16px 0}p{color:#425c79;line-height:1.6}.calculator{display:grid;grid-template-columns:1.1fr 1fr;background:white;border-radius:24px;overflow:hidden;box-shadow:0 16px 60px #003b7e18;margin:32px 0}.inputs{padding:32px}label{display:block;font-size:14px;font-weight:650;margin-bottom:9px}.field{margin-bottom:24px}select,input{width:100%;padding:14px;border:1px solid #b4cce3;border-radius:10px;font:inherit;color:inherit;background:#fff}select:focus,input:focus{outline:3px solid rgb(249,174,0);outline-offset:2px}.weights{display:grid;grid-template-columns:1fr 1fr;gap:16px}.hint{font-size:12px;margin:8px 0 0}.result{background:rgb(0,59,126);color:white;padding:36px;display:flex;flex-direction:column;justify-content:center}.result p{color:rgb(226,244,255)}.eyebrow{font-size:12px;letter-spacing:1.8px;text-transform:uppercase}.number{color:rgb(249,174,0);font-size:72px;font-weight:750;letter-spacing:-3px;line-height:1.2;margin-top:16px}.unit{font-size:18px;color:rgb(226,244,255)}.breakdown{border-top:1px solid #ffffff30;margin-top:30px;padding-top:16px}.row{display:flex;justify-content:space-between;gap:12px;margin:14px 0;font-size:14px}.row strong{white-space:nowrap}.disclaimer{background:#fff;border-left:6px solid rgb(242,142,0);border-radius:10px;padding:20px 24px;margin:24px 0}.disclaimer h2{font-size:18px;margin:0 0 8px}.disclaimer p{margin:0}.disclaimer strong{color:rgb(0,59,126)}.note{font-size:13px;max-width:760px}#error{color:#ffcfb9;font-size:14px}button{border:0;background:rgb(249,174,0);color:rgb(0,59,126);border-radius:8px;padding:10px 14px;font:inherit;font-size:13px;cursor:pointer}button:hover{background:rgb(242,142,0)}@media(max-width:650px){main{margin:32px auto}.calculator{grid-template-columns:1fr}.inputs,.result{padding:24px}.number{color:rgb(249,174,0);font-size:60px}}
 </style>
 </head>
 <body>
 <main>
-<div class="brand">TRANSPORT TOOLS / PAYLOAD</div>
+<div class="brand">METRO / TRANSPORT TOOLS</div>
 <h1>How much can you load?</h1>
 <p>Calculate the available cargo weight for your truck and semitrailer.</p>
 <div class="calculator">
@@ -25,13 +25,17 @@
 <p class="hint">Example tare defaults: truck 8 t; dry trailer 7 t; temperature-controlled trailer 9 t. Edit to match your vehicle.</p>
 </section>
 <section class="result" aria-label="Calculated payload" aria-live="polite" aria-atomic="true">
-<div class="eyebrow">Maximum payload</div>
+<div class="eyebrow">Calculated maximum payload</div>
 <div class="number" id="payload">25.0</div><div class="unit">tonnes of cargo</div>
 <p id="kg">25,000 kg available</p>
 <div class="breakdown"><div class="row"><span>Gross weight limit</span><strong id="limit">40.0 t</strong></div><div class="row"><span>Truck + trailer tare</span><strong id="total">15.0 t</strong></div><div class="row"><span>Calculation</span><strong id="formula">40 − 8 − 7</strong></div></div>
 <p id="error" hidden></p>
 </section>
 </div>
+<aside class="disclaimer" aria-labelledby="disclaimer-title">
+<h2 id="disclaimer-title">Agreed payload limits</h2>
+<p>The agreed maximum payload is <strong>24 tonnes for road transport</strong> and <strong>22 tonnes for frozen cargo</strong>. The calculated maximum above does not override these agreed limits. Always use the lower of the calculated maximum and the applicable agreed limit.</p>
+</aside>
 <p class="note">Planning estimate using the requested limits: 40 t for road and 44 t for rail/intermodal. The 44 t allowance depends on applicable intermodal rules. Actual permitted payload also depends on vehicle ratings, axle loads and local regulations. Tare should include fuel, equipment and the driver.</p>
 </main>
 <script src="calculator.js"></script>
