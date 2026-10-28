@@ -1,0 +1,135 @@
+{
+  "checked_at": "2026-10-28",
+  "assets": [
+    {
+      "file": "gyurov.jpg",
+      "subject": "Андрей Гюров",
+      "attribution": "Government.bg",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Andrey-Gyurov-PM.jpg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Andrey-Gyurov-PM.jpg",
+      "modifications": "Няма промени във файла. В сайта може да се показва с CSS изрязване."
+    },
+    {
+      "file": "yotova.jpg",
+      "subject": "Илияна Йотова",
+      "attribution": "Администрация на президента / President.bg",
+      "license": "CC BY 2.5 BG",
+      "license_url": "https://creativecommons.org/licenses/by/2.5/bg/",
+      "source_page": "https://commons.wikimedia.org/wiki/File:President_Iliyana_Yotova.jpg",
+      "download_url": "https://www.president.bg/files/Iliyana-Iotova-new.jpg",
+      "modifications": "Няма промени във файла. В сайта може да се показва с CSS изрязване."
+    },
+    {
+      "file": "kostadinov.png",
+      "subject": "Костадин Костадинов",
+      "attribution": "Parliament.bg",
+      "license": "CC BY 2.5 BG",
+      "license_url": "https://creativecommons.org/licenses/by/2.5/bg/",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Kostadin_Kostadinov_(47NS).png",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/4/48/Kostadin_Kostadinov_%2847NS%29.png",
+      "modifications": "Няма промени във файла. В сайта може да се показва с CSS изрязване."
+    },
+    {
+      "file": "mihaylov.png",
+      "subject": "Ивелин Михайлов",
+      "attribution": "Juli KRIVOSHIEV / Parliament.bg",
+      "license": "CC BY 2.5 BG",
+      "license_url": "https://creativecommons.org/licenses/by/2.5/bg/",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Ivelin_Mihaylov_(51NS).png",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Ivelin_Mihaylov_%2851NS%29.png",
+      "modifications": "Няма промени във файла. В сайта може да се показва с CSS изрязване."
+    },
+    {
+      "file": "vasilev.png",
+      "subject": "Радостин Василев",
+      "attribution": "Juli KRIVOSHIEV / Parliament.bg",
+      "license": "CC BY 2.5 BG",
+      "license_url": "https://creativecommons.org/licenses/by/2.5/bg/",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Radostin_Vasilev_51NS.png",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Radostin_Vasilev_51NS.png",
+      "modifications": "Няма промени във файла. В сайта може да се показва с CSS изрязване."
+    },
+    {
+      "file": "radev.jpg",
+      "subject": "Румен Радев",
+      "attribution": "Government.bg",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Official_portrait_of_Rumen_Radev_(2026)_(cropped).jpg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Official_portrait_of_Rumen_Radev_%282026%29_%28cropped%29.jpg",
+      "modifications": "Няма промени във файла. В сайта може да се показва с CSS изрязване."
+    },
+    {
+      "file": "hristov.jpg",
+      "subject": "Румен Христов",
+      "attribution": "European People’s Party / David Plas",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0/",
+      "source_page": "https://commons.wikimedia.org/wiki/File:EPP_Congress_Rotterdam_-_Day_1_Rumen_Hristov_(52112187396)_(cropped).jpg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/6/64/EPP_Congress_Rotterdam_-_Day_1_Rumen_Hristov_%2852112187396%29_%28cropped%29.jpg",
+      "modifications": "Няма промени във файла. В сайта може да се показва с CSS изрязване."
+    },
+    {
+      "file": "vazrazhdane.png",
+      "subject": "Възраждане",
+      "attribution": "Официален сайт на Възраждане",
+      "license": "Не е намерен свободен лиценз; правата върху знака принадлежат на съответната организация.",
+      "source_page": "https://vazrazhdane.bg/",
+      "download_url": "https://vazrazhdane.bg/wp-content/uploads/2023/01/logo-v5.png",
+      "modifications": "Няма промени във файла."
+    },
+    {
+      "file": "velichie.png",
+      "subject": "Величие",
+      "attribution": "Официален сайт на Величие",
+      "license": "Не е намерен свободен лиценз; правата върху знака принадлежат на съответната организация.",
+      "source_page": "https://velichie.bg/",
+      "download_url": "https://velichie.bg/img/bottom-red-logo.png",
+      "modifications": "Няма промени във файла."
+    },
+    {
+      "file": "mech.png",
+      "subject": "МЕЧ",
+      "attribution": "Официален сайт на МЕЧ",
+      "license": "Не е намерен свободен лиценз; правата върху знака принадлежат на съответната организация.",
+      "source_page": "https://ppmech.bg/",
+      "download_url": "https://static.wixstatic.com/media/e50eb4_2c40e456d807405dbbb3c14066fca1f5~mv2.png",
+      "modifications": "Няма промени във файла."
+    },
+    {
+      "file": "sds.png",
+      "subject": "СДС",
+      "attribution": "Официален сайт на СДС",
+      "license": "Не е намерен свободен лиценз; правата върху знака принадлежат на съответната организация.",
+      "source_page": "https://www.sds.bg/",
+      "download_url": "https://www.sds.bg/wp-content/uploads/logo-4.png",
+      "modifications": "Няма промени във файла."
+    },
+    {
+      "file": "progresivna.png",
+      "subject": "Прогресивна България",
+      "attribution": "Официален сайт на Прогресивна България",
+      "license": "Не е намерен свободен лиценз; правата върху знака принадлежат на съответната организация.",
+      "source_page": "https://progresivnabulgaria.com/",
+      "download_url": "https://progresivnabulgaria.com/brand/logo.png",
+      "modifications": "Няма промени във файла."
+    },
+    {
+      "file": "progresivna-icon.png",
+      "subject": "Прогресивна България",
+      "attribution": "Официален сайт на Прогресивна България",
+      "license": "Не е намерен свободен лиценз; правата върху знака принадлежат на съответната организация.",
+      "source_page": "https://progresivnabulgaria.com/",
+      "download_url": "https://progresivnabulgaria.com/brand/logo-icon.png",
+      "modifications": "Няма промени във файла."
+    },
+    {
+      "file": "sds-alternative.png",
+      "download_url": "https://old.sds.bg/img/logo.png",
+      "attribution": "СДС",
+      "license": "Всички права запазени"
+    }
+  ]
+}
